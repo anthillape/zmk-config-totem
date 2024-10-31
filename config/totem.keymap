@@ -56,19 +56,19 @@
 
         home {
             bindings = <
-           &kp Q                          &kp W                   &kp E                      &kp R                        &kp T      &kp Y      &kp U                          &kp I                        &kp O                    &kp P
-           &hold_tap_left LEFT_COMMAND A  &hold_tap_left LCTRL S  &hold_tap_left LEFT_ALT D  &hold_tap_left LEFT_SHIFT F  &kp G      &kp H      &hold_tap_right RIGHT_SHIFT J  &hold_tap_right RIGHT_ALT K  &hold_tap_right RCTRL L  &hold_tap_right RIGHT_GUI SEMI
-&kp GRAVE  &kp Z                          &kp X                   &kp C                      &kp V                        &kp B      &kp N      &kp M                          &kp COMMA                    &kp DOT                  &kp FSLH                        &kp SQT
-                                                                  &kp LEFT_SHIFT             &lt 2 TAB                    &kp RET    &kp SPACE  &lt 1 ESC                      &kp BSPC
+           &kp Q                          &kp W                   &kp E                      &kp R                        &kp T        &kp Y       &kp U                          &kp I                        &kp O                    &kp P
+           &hold_tap_left LEFT_COMMAND A  &hold_tap_left LCTRL S  &hold_tap_left LEFT_ALT D  &hold_tap_left LEFT_SHIFT F  &kp G        &kp H       &hold_tap_right RIGHT_SHIFT J  &hold_tap_right RIGHT_ALT K  &hold_tap_right RCTRL L  &hold_tap_right RIGHT_GUI SEMI
+&kp GRAVE  &kp Z                          &kp X                   &kp C                      &kp V                        &kp B        &kp N       &kp M                          &kp COMMA                    &kp DOT                  &kp FSLH                        &kp SQT
+                                                                  &mt LEFT_SHIFT MINUS       &lt 2 TAB                    &kp SPACE    &kp RETURN  &lt 1 ESC                      &kp BSPC
             >;
         };
 
         navnum {
             bindings = <
-           &kp ASTERISK                       &kp N7                   &kp N8                      &kp N9                        &kp MINUS    &kp LS(LG(LEFT_BRACKET))  &kp PAGE_DOWN  &kp PAGE_UP    &kp LS(LG(RIGHT_BRACKET))  &kp K_SCROLL_UP
-           &hold_tap_left LEFT_COMMAND SLASH  &hold_tap_left LCTRL N4  &hold_tap_left LEFT_ALT N5  &hold_tap_left LEFT_SHIFT N6  &kp PLUS     &kp LEFT                  &kp DOWN       &kp UP_ARROW   &kp RIGHT                  &kp RIGHT_GUI
-&kp LCTRL  &kp PERCENT                        &kp N1                   &kp N2                      &kp N3                        &kp EQUAL    &kp LG(LEFT)              &kp LA(LEFT)   &kp LA(RIGHT)  &kp LG(RIGHT)              &kp K_SCROLL_DOWN  &none
-                                                                       &mt LEFT_SHIFT PERIOD       &kp KP_NUMBER_0               &trans       &trans                    &trans         &trans
+           &kp ASTERISK                       &kp N7                   &kp N8                      &kp N9                        &kp MINUS    &none         &kp LS(LG(LEFT_BRACKET))  &none          &kp LS(LG(RIGHT_BRACKET))  &kp PAGE_UP
+           &hold_tap_left LEFT_COMMAND SLASH  &hold_tap_left LCTRL N4  &hold_tap_left LEFT_ALT N5  &hold_tap_left LEFT_SHIFT N6  &kp PLUS     &kp LEFT      &kp DOWN                  &kp UP_ARROW   &kp RIGHT                  &kp RIGHT_GUI
+&kp LCTRL  &kp PERCENT                        &kp N1                   &kp N2                      &kp N3                        &kp EQUAL    &kp LG(LEFT)  &kp LA(LEFT)              &kp LA(RIGHT)  &kp LG(RIGHT)              &kp PAGE_DOWN  &none
+                                                                       &mt LEFT_SHIFT PERIOD       &kp KP_NUMBER_0               &kp MINUS    &trans        &trans                    &trans
             >;
         };
 
@@ -77,16 +77,16 @@
        &kp EXCL          &kp AT                       &kp LEFT_BRACE                            &kp RIGHT_BRACE                              &kp PERCENT      &kp CARET        &kp AMPS         &kp ASTRK      &kp RA(NUMBER_3)  &kp RS(N3)
        &kp LEFT_COMMAND  &hold_tap_left LCTRL DOLLAR  &hold_tap_left LEFT_ALT LEFT_PARENTHESIS  &hold_tap_left LEFT_SHIFT RIGHT_PARENTHESIS  &kp BACKSLASH    &kp EXCLAMATION  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RCTRL         &kp RIGHT_GUI
 &none  &kp MINUS         &kp CARET                    &kp LEFT_BRACKET                          &kp RIGHT_BRACKET                            &kp PIPE         &kp PERCENT      &kp TILDE        &kp LT         &kp GT            &kp PLUS       &kp EQUAL
-                                                      &trans                                    &trans                                       &trans           &kp MINUS        &trans           &kp DELETE
+                                                      &trans                                    &trans                                       &trans           &trans           &trans           &kp DELETE
             >;
         };
 
         func {
             bindings = <
-            &none  &kp F7  &kp F8  &kp F9  &kp F12    &none  &kp K_PREV                     &kp K_PLAY_PAUSE       &kp K_NEXT             &none
-            &none  &kp F4  &kp F5  &kp F6  &kp F11    &none  &mt RIGHT_SHIFT C_VOLUME_DOWN  &mt RIGHT_ALT K_MUTE   &mt RCTRL C_VOLUME_UP  &kp RIGHT_COMMAND
-&bt BT_PRV  &none  &kp F1  &kp F2  &kp F3  &kp F10    &none  &kp C_BRIGHTNESS_DEC           &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_INC   &none              &bt BT_NXT
-                           &none   &trans  &none      &none  &trans                         &none
+            &none  &kp F7  &kp F8  &kp F9  &kp F12    &kp LS(LC(LG(N4)))  &kp K_PREV                     &kp K_PLAY_PAUSE      &kp K_NEXT             &none
+            &none  &kp F4  &kp F5  &kp F6  &kp F11    &kp LS(LG(N4))      &mt RIGHT_SHIFT C_VOLUME_DOWN  &mt RIGHT_ALT K_MUTE  &mt RCTRL C_VOLUME_UP  &kp RIGHT_COMMAND
+&bt BT_PRV  &none  &kp F1  &kp F2  &kp F3  &kp F10    &none               &kp C_BRIGHTNESS_DEC           &none                 &kp C_BRIGHTNESS_INC   &none              &bt BT_NXT
+                           &none   &trans  &none      &none               &trans                         &none
             >;
         };
     };
