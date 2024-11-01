@@ -65,17 +65,17 @@
             bindings = <
            &kp ASTERISK                       &kp N7                   &kp N8                      &kp N9                        &kp MINUS    &none         &kp LS(LG(LEFT_BRACKET))  &none          &kp LS(LG(RIGHT_BRACKET))  &kp PAGE_UP
            &hold_tap_left LEFT_COMMAND SLASH  &hold_tap_left LCTRL N4  &hold_tap_left LEFT_ALT N5  &hold_tap_left LEFT_SHIFT N6  &kp PLUS     &kp LEFT      &kp DOWN                  &kp UP_ARROW   &kp RIGHT                  &kp RIGHT_GUI
-&kp LCTRL  &kp PERCENT                        &kp N1                   &kp N2                      &kp N3                        &kp EQUAL    &kp LG(LEFT)  &kp LA(LEFT)              &kp LA(RIGHT)  &kp LG(RIGHT)              &kp PAGE_DOWN  &none
+&kp LCTRL  &kp PERCENT                        &kp N1                   &kp N2                      &kp N3                        &kp EQUAL    &kp LG(LEFT)  &kp LA(LEFT)              &kp LA(RIGHT)  &kp LG(RIGHT)              &kp PAGE_DOWN  &kp LG(GRAVE)
                                                                        &mt LEFT_COMMAND PERIOD     &kp KP_NUMBER_0               &trans       &trans        &trans                    &trans
             >;
         };
 
         sym {
             bindings = <
-       &kp EXCL          &kp AT                       &kp LEFT_BRACE                            &kp RIGHT_BRACE                              &kp PERCENT      &kp CARET        &kp AMPS         &kp ASTRK      &kp RA(NUMBER_3)  &kp RS(N3)
-       &kp LEFT_COMMAND  &hold_tap_left LCTRL DOLLAR  &hold_tap_left LEFT_ALT LEFT_PARENTHESIS  &hold_tap_left LEFT_SHIFT RIGHT_PARENTHESIS  &kp BACKSLASH    &kp EXCLAMATION  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RCTRL         &kp RIGHT_GUI
-&none  &kp MINUS         &kp CARET                    &kp LEFT_BRACKET                          &kp RIGHT_BRACKET                            &kp PIPE         &kp PERCENT      &kp TILDE        &kp LT         &kp GT            &kp PLUS       &kp EQUAL
-                                                      &trans                                    &trans                                       &trans           &trans           &trans           &kp DELETE
+             &kp EXCL          &kp AT                       &kp LEFT_BRACE                            &kp RIGHT_BRACE                              &kp PERCENT      &kp CARET        &kp AMPS         &kp ASTRK      &kp RA(NUMBER_3)  &kp RS(N3)
+             &kp LEFT_COMMAND  &hold_tap_left LCTRL DOLLAR  &hold_tap_left LEFT_ALT LEFT_PARENTHESIS  &hold_tap_left LEFT_SHIFT RIGHT_PARENTHESIS  &kp BACKSLASH    &kp EXCLAMATION  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RCTRL         &kp RIGHT_GUI
+&kp LG(TAB)  &kp MINUS         &kp CARET                    &kp LEFT_BRACKET                          &kp RIGHT_BRACKET                            &kp PIPE         &kp PERCENT      &kp TILDE        &kp LT         &kp GT            &kp PLUS       &kp EQUAL
+                                                            &trans                                    &trans                                       &trans           &trans           &trans           &kp DELETE
             >;
         };
 
