@@ -17,7 +17,79 @@
 
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <22 23>;
+        };
+
+        paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <23 24>;
+        };
+
+        cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <21 22>;
+        };
+
+        undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <10 11>;
+        };
+
+        redo {
+            bindings = <&kp LG(LS(Z))>;
+            key-positions = <11 12>;
+        };
+
+        enter-right {
+            bindings = <&kp RET>;
+            key-positions = <16 17 18>;
+        };
+
+        enter-left {
+            bindings = <&kp RET>;
+            key-positions = <11 12 13>;
+        };
+
+        backspace-right {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <6 7>;
+        };
+
+        backspace-left {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <2 3>;
+        };
+
+        questionmark {
+            bindings = <&kp QUESTION>;
+            key-positions = <16 15>;
+        };
+
+        exclaim {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <14 13>;
+        };
+
+        paste-no-format {
+            bindings = <&kp LG(LA(LS(V)))>;
+            key-positions = <24 23 22>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <3 4>;
+        };
+    };
 
     behaviors {
         hold_tap_left: hold_tap_left {
@@ -54,36 +126,36 @@
 
         home {
             bindings = <
-           &kp Q                          &kp W                   &kp E                      &kp R                        &kp T                   &kp Y       &kp U                          &kp I                        &kp O                    &kp P
-           &hold_tap_left LEFT_COMMAND A  &hold_tap_left LCTRL S  &hold_tap_left LEFT_ALT D  &hold_tap_left LEFT_SHIFT F  &kp G                   &kp H       &hold_tap_right RIGHT_SHIFT J  &hold_tap_right RIGHT_ALT K  &hold_tap_right RCTRL L  &hold_tap_right RIGHT_GUI SEMI
-&kp GRAVE  &kp Z                          &kp X                   &kp C                      &kp V                        &kp B                   &kp N       &kp M                          &kp COMMA                    &kp DOT                  &kp FSLH                        &kp SQT
-                                                                  &mt LEFT_COMMAND ESC       &lt 2 TAB                    &mt LEFT_SHIFT MINUS    &kp RETURN  &lt 1 SPACE                    &kp BSPC
+                 &kp Q                        &kp W                   &kp E                      &kp R                  &kp T                   &kp Y            &kp U                   &kp I                        &kp O                    &kp P
+                 &hold_tap_left LEFT_SHIFT A  &hold_tap_left LCTRL S  &hold_tap_left LEFT_ALT D  &hold_tap_left LCMD F  &kp G                   &kp H            &hold_tap_right LCMD J  &hold_tap_right RIGHT_ALT K  &hold_tap_right RCTRL L  &hold_tap_right LEFT_SHIFT SEMI
+&mt LCTRL GRAVE  &kp Z                        &kp X                   &kp C                      &kp V                  &kp B                   &kp N            &kp M                   &kp COMMA                    &kp DOT                  &kp FSLH                         &kp SQT
+                                                                      &kp LEFT_COMMAND           &mo 2                  &mt LEFT_SHIFT MINUS    &kp RIGHT_SHIFT  &lt 1 SPACE             &kp RCMD
             >;
         };
 
         navnum {
             bindings = <
-           &kp ASTERISK                       &kp N7                   &kp N8                      &kp N9                        &kp MINUS    &none         &kp LS(LG(LEFT_BRACKET))  &none          &kp LS(LG(RIGHT_BRACKET))  &kp PAGE_UP
-           &hold_tap_left LEFT_COMMAND SLASH  &hold_tap_left LCTRL N4  &hold_tap_left LEFT_ALT N5  &hold_tap_left LEFT_SHIFT N6  &kp PLUS     &kp LEFT      &kp DOWN                  &kp UP_ARROW   &kp RIGHT                  &kp RIGHT_GUI
-&kp LCTRL  &kp PERCENT                        &kp N1                   &kp N2                      &kp N3                        &kp EQUAL    &kp LG(LEFT)  &kp LA(LEFT)              &kp LA(RIGHT)  &kp LG(RIGHT)              &kp PAGE_DOWN  &kp LG(GRAVE)
-                                                                       &mt LEFT_COMMAND PERIOD     &kp KP_NUMBER_0               &trans       &trans        &trans                    &trans
+           &kp ASTERISK                     &kp N7                   &kp N8                      &kp N9                  &kp MINUS    &none         &kp LS(LG(LEFT_BRACKET))  &none          &kp LS(LG(RIGHT_BRACKET))  &kp PAGE_UP
+           &hold_tap_left LEFT_SHIFT SLASH  &hold_tap_left LCTRL N4  &hold_tap_left LEFT_ALT N5  &hold_tap_left LCMD N6  &kp PLUS     &kp LEFT      &kp DOWN                  &kp UP_ARROW   &kp RIGHT                  &none
+&kp LCTRL  &kp PERCENT                      &kp N1                   &kp N2                      &kp N3                  &kp EQUAL    &kp LG(LEFT)  &kp LA(LEFT)              &kp LA(RIGHT)  &kp LG(RIGHT)              &kp PAGE_DOWN  &none
+                                                                     &mt LEFT_COMMAND PERIOD     &kp KP_NUMBER_0         &trans       &trans        &trans                    &trans
             >;
         };
 
         sym {
             bindings = <
-             &kp EXCL          &kp AT                       &kp LEFT_BRACE                            &kp RIGHT_BRACE                              &kp PERCENT      &kp CARET        &kp AMPS         &kp ASTRK      &kp RA(NUMBER_3)  &kp RS(N3)
-             &kp LEFT_COMMAND  &hold_tap_left LCTRL DOLLAR  &hold_tap_left LEFT_ALT LEFT_PARENTHESIS  &hold_tap_left LEFT_SHIFT RIGHT_PARENTHESIS  &kp BACKSLASH    &kp EXCLAMATION  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RCTRL         &kp RIGHT_GUI
-&kp LG(TAB)  &kp MINUS         &kp CARET                    &kp LEFT_BRACKET                          &kp RIGHT_BRACKET                            &kp PIPE         &kp PERCENT      &kp TILDE        &kp LT         &kp GT            &kp PLUS       &kp EQUAL
-                                                            &trans                                    &trans                                       &trans           &trans           &trans           &kp DELETE
+           &kp EXCL        &kp AT                       &kp LEFT_BRACE                            &kp RIGHT_BRACE                        &kp PERCENT      &kp CARET        &kp AMPS   &kp ASTRK      &kp RA(NUMBER_3)  &kp RS(N3)
+           &kp LEFT_SHIFT  &hold_tap_left LCTRL DOLLAR  &hold_tap_left LEFT_ALT LEFT_PARENTHESIS  &hold_tap_left LCMD RIGHT_PARENTHESIS  &kp BACKSLASH    &kp EXCLAMATION  &kp LCMD   &kp RIGHT_ALT  &kp RCTRL         &kp LEFT_SHIFT
+&kp LCTRL  &kp MINUS       &kp CARET                    &kp LEFT_BRACKET                          &kp RIGHT_BRACKET                      &kp PIPE         &kp PERCENT      &kp TILDE  &kp LT         &kp GT            &kp PLUS        &kp EQUAL
+                                                        &trans                                    &trans                                 &trans           &trans           &trans     &trans
             >;
         };
 
         func {
             bindings = <
             &none  &kp F7  &kp F8  &kp F9  &kp F12    &kp LS(LC(LG(N4)))  &kp K_PREV                     &kp K_PLAY_PAUSE      &kp K_NEXT             &none
-            &none  &kp F4  &kp F5  &kp F6  &kp F11    &kp LS(LG(N4))      &mt RIGHT_SHIFT C_VOLUME_DOWN  &mt RIGHT_ALT K_MUTE  &mt RCTRL C_VOLUME_UP  &kp RIGHT_COMMAND
-&bt BT_PRV  &none  &kp F1  &kp F2  &kp F3  &kp F10    &none               &kp C_BRIGHTNESS_DEC           &none                 &kp C_BRIGHTNESS_INC   &none              &bt BT_NXT
+            &none  &kp F4  &kp F5  &kp F6  &kp F11    &kp LS(LG(N4))      &mt RIGHT_SHIFT C_VOLUME_DOWN  &mt RIGHT_ALT K_MUTE  &mt RCTRL C_VOLUME_UP  &none
+&bt BT_PRV  &none  &kp F1  &kp F2  &kp F3  &kp F10    &none               &kp C_BRIGHTNESS_DEC           &none                 &kp C_BRIGHTNESS_INC   &none  &bt BT_NXT
                            &none   &trans  &none      &none               &trans                         &none
             >;
         };
@@ -98,5 +170,4 @@
         };
     };
 };
-
 
