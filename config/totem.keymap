@@ -115,10 +115,10 @@
 
         func {
             bindings = <
-            &none           &kp K_PREV          &kp K_PP             &kp K_NEXT         &kp LS(LC(LG(N4)))    &none  &kp F7  &kp F8  &kp F9  &kp F12
-            &kp LEFT_SHIFT  &mt LCTRL C_VOL_DN  &mt LEFT_ALT K_MUTE  &mt LCMD C_VOL_UP  &kp LG(LS(N4))        &none  &kp F4  &kp F5  &kp F6  &kp F11
-&bt BT_PRV  &none           &kp C_BRI_DEC       &none                &kp C_BRI_UP       &none                 &none  &kp F1  &kp F2  &kp F3  &kp F10  &bt BT_NXT
-                                                &none                &trans             &none                 &none  &trans  &none
+            &none           &kp K_PREV          &kp K_PP             &kp K_NEXT         &kp LS(LC(LG(N4)))    &bt BT_CLR_ALL  &kp F7  &kp F8  &kp F9  &kp F12
+            &kp LEFT_SHIFT  &mt LCTRL C_VOL_DN  &mt LEFT_ALT K_MUTE  &mt LCMD C_VOL_UP  &kp LG(LS(N4))        &bt BT_CLR      &kp F4  &kp F5  &kp F6  &kp F11
+&bt BT_PRV  &none           &kp C_BRI_DEC       &none                &kp C_BRI_UP       &bt BT_SEL 0          &bt BT_SEL 1    &kp F1  &kp F2  &kp F3  &kp F10  &bt BT_NXT
+                                                &none                &trans             &none                 &none           &trans  &none
             >;
         };
     };
