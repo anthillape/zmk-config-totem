@@ -3,8 +3,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    quick-tap-ms = <100>;
-    tapping-term-ms = <170>;
+    quick-tap-ms = <190>;
+    tapping-term-ms = <200>;
 };
 
 / {
