@@ -119,7 +119,7 @@
             &kp EXCLAMATION             &kp AT_SIGN                     &kp LBRC                                  &kp RBRC                               &kp PERCENT    &kp CARET     &kp N7                   &kp N8                        &kp N9                    &kp MINUS
             &hold_tap_left LSHFT GRAVE  &hold_tap_left LCTRL BACKSLASH  &hold_tap_left LEFT_ALT LEFT_PARENTHESIS  &hold_tap_left LCMD RIGHT_PARENTHESIS  &kp PIPE       &kp ASTERISK  &hold_tap_right RCMD N4  &hold_tap_right RIGHT_ALT N5  &hold_tap_right RCTRL N6  &hold_tap_right RIGHT_SHIFT PLUS
 &kp LA(N3)  &kp LS(NUMBER_3)            &kp DOLLAR                      &kp LBKT                                  &kp RBKT                               &kp AMPS       &kp QUESTION  &kp N1                   &kp N2                        &kp N3                    &kp EQUAL                         &kp BACKSLASH
-                                                                        &none                                     &trans                                 &none          &trans        &kp PERIOD               &mt RCMD N0
+                                                                        &none                                     &trans                                 &none          &trans        &trans                   &mt RCMD N0
             >;
         };
 
