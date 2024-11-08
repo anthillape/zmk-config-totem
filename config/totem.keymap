@@ -87,6 +87,43 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <200>;
         };
+
+        bt-clr-all {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <5 4>;
+            layers = <3>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <400>;
+        };
+
+        bt-clr {
+            bindings = <&bt BT_CLR>;
+            key-positions = <14 15>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <400>;
+            layers = <3>;
+        };
+
+        find-all {
+            bindings = <&kp LS(LG(F))>;
+            key-positions = <14 11>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <200>;
+        };
+
+        ide-quick-find {
+            bindings = <&kp LG(P)>;
+            key-positions = <1 3>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <200>;
+        };
+
+        ide-quick-run {
+            bindings = <&kp LG(LS(P))>;
+            key-positions = <1 4>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <200>;
+        };
     };
 
     behaviors {
@@ -162,10 +199,10 @@
 
         func {
             bindings = <
-            &none           &kp K_PREV          &kp K_PP             &kp K_NEXT         &kp LS(LC(LG(N4)))    &bt BT_CLR_ALL  &kp F7  &kp F8  &kp F9  &kp F12
-            &kp LEFT_SHIFT  &mt LCTRL C_VOL_DN  &mt LEFT_ALT K_MUTE  &mt LCMD C_VOL_UP  &kp LG(LS(N4))        &bt BT_CLR      &kp F4  &kp F5  &kp F6  &kp F11
-&bt BT_PRV  &none           &kp C_BRI_DEC       &none                &kp C_BRI_UP       &bt BT_SEL 0          &bt BT_SEL 1    &kp F1  &kp F2  &kp F3  &kp F10  &bt BT_NXT
-                                                &none                &trans             &none                 &none           &trans  &none
+            &none           &kp K_PREV          &kp K_PP             &kp K_NEXT         &kp LS(LC(LG(N4)))    &none         &kp F7  &kp F8  &kp F9  &kp F12
+            &kp LEFT_SHIFT  &mt LCTRL C_VOL_DN  &mt LEFT_ALT K_MUTE  &mt LCMD C_VOL_UP  &kp LG(LS(N4))        &none         &kp F4  &kp F5  &kp F6  &kp F11
+&bt BT_PRV  &none           &kp C_BRI_DEC       &none                &kp C_BRI_UP       &bt BT_SEL 0          &bt BT_SEL 1  &kp F1  &kp F2  &kp F3  &kp F10  &bt BT_NXT
+                                                &none                &trans             &none                 &none         &trans  &none
             >;
         };
     };
